@@ -2,6 +2,8 @@
 
 Offline analysis of the Roku USB update archive for the Hisense 58A51LUR, Roku hardware ID `L203X`. The archive is a useful hardware reference for Roku OS **15.2.4**, build **`HEF.64E45400A`**. The TV in the device record reported **15.3.4**, build **`HEG.34E02402A`**. The full build strings matter when comparing binaries or claiming a security fix. [Evidence and methods](EVIDENCE.md)
 
+For commands and expected output, see [Reproducing the verification checks](REPRODUCING.md).
+
 ## Findings
 
 - **Package-to-hardware mapping.** Main and rescue each contain an explicit `L203X` configuration. Their embedded Amlogic T5W X9 1G device trees match byte for byte. They describe four Cortex-A55 cores and a 1 GiB usable-memory range. Both packaged Linux 5.4.180 kernels are 32-bit ARM images. These are observations about the package. The physical board revision and live storage map remain open.
