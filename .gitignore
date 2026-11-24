@@ -1,0 +1,6 @@
+# Only the publication documents belong in this repository.
+/*
+!/.gitignore
+!/README.md
+!/EVIDENCE.md
+!/LICENSE.md
